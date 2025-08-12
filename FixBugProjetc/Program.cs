@@ -1,18 +1,22 @@
-﻿while (true)
+﻿char operatorValue='\0';
+decimal result=0;
+int numberOne=0;
+ int numberTwo = 0;
+while (true)
 {
 
 	try
 	{
 	
-		int result = 0;
+		 result = 0;
 		Console.WriteLine("Enter  Number  1:");
-		int  numberOne=int.Parse(Console.ReadLine());
+		  numberOne=int.Parse(Console.ReadLine());
 
         Console.WriteLine("Enter  Number 2:");
-        int numberTwo = int.Parse(Console.ReadLine());
+         numberTwo = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Enter  Operator:");
-		var  operatorValue=Console.ReadKey().KeyChar;
+	  operatorValue=Console.ReadKey().KeyChar;
 
     }
 	catch (Exception)
@@ -26,20 +30,20 @@
 		switch (operatorValue)
 		{
 			case '*':
-				result = numberOne * numbertwo;
+				result = numberOne * numberTwo;
                 Console.WriteLine(result);
                 break;
 
             case '/':
-                resul = numberOne /numbertwo;
+                result = numberOne / numberTwo;
                 Console.WriteLine(result);
                 break;
             case '+':
-                resul = numberOne + numbertwo;
+                result = numberOne + numberTwo;
                 Console.WriteLine(result);
                 break;
             case '-':
-                resul = numberOne + numbertwo;
+                result = numberOne + numberTwo;
                 Console.WriteLine(result);
                 break;
 
